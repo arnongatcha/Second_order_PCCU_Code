@@ -2,12 +2,15 @@
 %%  NATIONAL ADVANCED SCHOOL OF MARITIME  AND OCEAN SCIENCE AND TECHNOLOGY (NASMOST) OF EBOLOWA UNIVERSITY
 %%                              BOX P.O. 292 KRIBI, CAMEROON.
 %% 
-%% CODE  FOR SEDIMENT TRANSPORT WITH TURBULENCE. THE MODEL COMPUTED IS AVAILABLE IN THE PAPER
-%% ENTITLED " A high order Path-Conservative Central-Upwind Arbitrary DERivative (PCCU-ADER)
-%% method for a generalized high order sediment transport model" 
-%% THE CODE IS WRITTEN IN 1D VERSION AND IS USED FOR ALL THE 1D TESTS PRESENT IN THIS PAPER. 
+%% MATLAB CODE  FOR AN AVERAGED SEDIMENT TRANSPORT MODEL THAT ACCOUNTS  THE TURBULENCE PHENOMENA. 
+%% THE MODEL COMPUTED BY USING PATH-CONSERVATIVE CENTRAL-UPWIND WITH ARBITRARY DERIVATIVES METHODOLOGY IS AVAILABLE IN THE PAPER ENTITLED
+%%  "A high order Path-Conservative Central-Upwind Arbitrary DERivative (PCCU-ADER)
+%%    method for a generalized high order sediment transport model" 
+%% See also the paper entitled
+%% A sediment transport theory based on distortion-free-boundary nonhomogeneous fluid flows. 
+%% Application and Engineering Science, (2023) 100148.
+%% https://doi.org/10.1016/j.apples.2023.100148. 
 %%  
-
 
 
 close all
@@ -25,9 +28,9 @@ set(0,'DefaultTextFontName','Times',...
 'DefaultLineMarkerSize',1.75)
 
 
-% gravitation g
-g    = 9.81 ;
-pore = 0.4 ; 
+
+g    = 9.81 ; % gravitation g
+pore = 0.4  ; % The bed porosity
 
 % nx = number of cells in x-direction
 nx   = 100 ;
